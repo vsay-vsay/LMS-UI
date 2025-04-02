@@ -21,7 +21,7 @@ A modern, production-ready template for building full-stack React applications u
 Create .env file in root folder
 
 ```bash
-VITE_ERP_URL=your-backend-URL
+VITE_LMS_URL=your-backend-URL
 ```
 
 ### Installation
