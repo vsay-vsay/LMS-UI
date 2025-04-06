@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
 import  SideNavBar from "~/components/template/sidenavbar"
-import LMSAdminTemplete from "~/components/template/LMS/Dashboard/admin"
+import LMSPublicCourseTemplete from "~/components/template/LMS/PublicCourse/public";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,13 +10,13 @@ export function meta({}: Route.MetaArgs) {
 }
 
 const breadcrumbItems = [
-  { label: "Dashboard" }, // No href means this is the current page
+  { label: "Public Course" }, // No href means this is the current page
 ];
 
-export default function ERPAdminDashboard() {
+export default function LMSPublicCourse() {
   return (
-    <SideNavBar items={breadcrumbItems} enableSidebar="Dashboard">
-        <LMSAdminTemplete role="Admin"/>
+    <SideNavBar items={breadcrumbItems} enableSidebar="Public Course">
+        <LMSPublicCourseTemplete />
     </SideNavBar>
   )
 }

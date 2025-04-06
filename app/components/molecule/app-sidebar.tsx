@@ -34,7 +34,7 @@ const getRoleBasedData = () => {
         { title: "My Learning", url: "/lms/mylearning", icon: Bot },
         { title: "Public Course", url: "/lms/public-course", icon: Bot },
         { title: "Private Course", url: "/lms/private-course", icon: Bot },
-        { title: "Add Course", url: "/lms/add-course", icon: Bot },
+        { title: "Course Management", url: "/lms/course-management", icon: Bot },
       ]
       data.projects = [
         { name: "User Management", url: "/lms/user-management", icon: Frame },
@@ -50,7 +50,7 @@ const getRoleBasedData = () => {
         { title: "My Learning", url: "/lms/mylearning", icon: Bot },
         { title: "Public Course", url: "/lms/public-course", icon: Bot },
         { title: "Private Course", url: "/lms/private-course", icon: Bot },
-        { title: "Add Course", url: "/lms/add-course", icon: Bot },
+        { title: "Course Management", url: "/lms/course-management", icon: Bot },
         { title: "Settings", url: "/lms/settings", icon: Map },
       ]
       break
@@ -61,7 +61,6 @@ const getRoleBasedData = () => {
         { title: "My Learning", url: "/lms/mylearning", icon: Bot },
         { title: "Public Course", url: "/lms/public-course", icon: Bot },
         { title: "Private Course", url: "/lms/private-course", icon: Bot },
-        { title: "Add Course", url: "/lms/add-course", icon: Bot },
         { name: "Settings", url: "/lms/settings", icon: Map },
       ]
       break

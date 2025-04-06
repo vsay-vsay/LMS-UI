@@ -1,6 +1,6 @@
+import LMSPrivateCourseTemplete from "~/components/template/LMS/PrivateCourse/private";
 import type { Route } from "./+types/home";
 import  SideNavBar from "~/components/template/sidenavbar"
-import LMSAdminTemplete from "~/components/template/LMS/Dashboard/admin"
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,13 +10,13 @@ export function meta({}: Route.MetaArgs) {
 }
 
 const breadcrumbItems = [
-  { label: "Dashboard" }, // No href means this is the current page
+  { label: "Private Course" }, // No href means this is the current page
 ];
 
-export default function ERPAdminDashboard() {
+export default function LMSPrivateCourse() {
   return (
-    <SideNavBar items={breadcrumbItems} enableSidebar="Dashboard">
-        <LMSAdminTemplete role="Admin"/>
+    <SideNavBar items={breadcrumbItems} enableSidebar="Private Course">
+        <LMSPrivateCourseTemplete />
     </SideNavBar>
   )
 }

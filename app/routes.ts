@@ -20,5 +20,10 @@ export default [
     route("lms/user-dashboard", "routes/LMS/Dashboard/user-dashboard.tsx"),
     route("lms/tutor-dashboard", "routes/LMS/Dashboard/tutor-dashboard.tsx"),
     route("lms/user-management", "routes/LMS/UserManagement/usermanagement.tsx"),
-
+    route("lms/private-course", "routes/LMS/PrivateCourse/private.tsx"),
+    route("lms/public-course", "routes/LMS/PublicCourse/public.tsx"),
+    route("lms/private-course/:id", "routes/LMS/PrivateCourse/coursedetailsprivatepage.tsx"),
+    route("lms/public-course/:id", "routes/LMS/PublicCourse/coursedetailspublicpage.tsx"),
+    route("lms/course-management", "routes/LMS/CourseManagement/courcemanagement.tsx"),
+    route("lms/course-management/:id", "routes/LMS/CourseManagement/courseDetailspage.tsx"),
 ] satisfies RouteConfig;

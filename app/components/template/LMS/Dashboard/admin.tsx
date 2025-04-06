@@ -15,7 +15,7 @@ const HeadinCardData = {
     image: empDashboardHeadingImage,
 };
 
-export default function LMSAdminTemplete() {
+export default function LMSAdminTemplete({role}) {
     return (
         <>
             <Tabs defaultValue="dashboard" className="">
@@ -37,24 +37,41 @@ export default function LMSAdminTemplete() {
                     </div>
                 </TabsContent>
                 <TabsContent value="dashboard">
-                    <div className="flex flex-1 flex-col">
-                        <div className="@container/main flex flex-1 flex-col gap-2">
-                            <div className="flex flex-col gap-4 md:gap-6 md:py-6">
-                                <Admin4Card />
+                    {role === "Admin" && (
+                        <>
+                            <div className="flex flex-1 flex-col">
+                                <div className="@container/main flex flex-1 flex-col gap-2">
+                                    <div className="flex flex-col gap-4 md:gap-6 md:py-6">
+                                        <Admin4Card />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <RevenueChart />
-                    <div className="flex flex-1 flex-col ml-5">
-                        <div className="@container/main flex flex-1 flex-col gap-4">
-                            <div className="flex gap-6 md:gap-8 md:py-6">
-                                <CalendarDashboard />
-                                <BirthdayCard />
-                                <EventsCard />
+                            <RevenueChart />
+                            <div className="flex flex-1 flex-col ml-5">
+                                <div className="@container/main flex flex-1 flex-col gap-4">
+                                    <div className="flex gap-6 md:gap-8 md:py-6">
+                                        <CalendarDashboard />
+                                        <BirthdayCard />
+                                        <EventsCard />
+                                    </div>
+                                </div>
                             </div>
+                        </>
+                    )}
+
+                    {role === "Tutor" && (
+                        <div className="flex flex-col gap-6">
+                           Hello World
                         </div>
-                    </div>
+                    )}
+
+                    {role === "User" && (
+                        <div className="flex flex-col gap-6">
+                           HEllo World
+                        </div>
+                    )}
                 </TabsContent>
+
             </Tabs>
         </>
     )
